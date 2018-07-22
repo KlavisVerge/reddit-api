@@ -44,7 +44,7 @@ exports.handler = (event, context) => {
             returnObject.data.push(
               {
                   title: parsedResults[i].data.title,
-                  permalink: parsedResults[i].data.permalink
+                  permalink: 'https://www.reddit.com' + parsedResults[i].data.permalink
               }  
             );
         }
